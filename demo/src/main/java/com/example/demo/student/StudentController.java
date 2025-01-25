@@ -1,7 +1,6 @@
 package com.example.demo.student;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +15,7 @@ public class StudentController {
     public StudentController(StudentService studentService) {
         this.studentService = studentService;
     }
-
+    //Was passiert bei get
     @GetMapping()
     public List<Student> getStudents() {
         return studentService.getStudents();
