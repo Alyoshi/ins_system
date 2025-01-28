@@ -18,6 +18,6 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t 'inssytem:latest' -f 'demo'
+          docker build -t inssytem:latest demo
           docker tag inssytem:latest ghcr.io/alyoshi/inssytem:latest
           docker push ghcr.io/alyoshi/inssytem:latest
